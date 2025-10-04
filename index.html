@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Student Homepage</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: #fff;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 32px 16px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        nav a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 4px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        nav a:hover {
+            border-bottom: 2px solid #1a73e8;
+        }
+        section {
+            margin-bottom: 40px;
+            color: #000;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 24px 18px;
+            transition: box-shadow 0.2s;
+        }
+        section:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            color: #000;
+            letter-spacing: 0.5px;
+            border-left: 4px solid #1a73e8;
+            padding-left: 12px;
+        }
+        .video-list,
+        .image-list,
+        .blog-list,
+        .project-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .video-list li,
+        .image-list li,
+        .blog-list li,
+        .project-list li {
+            margin-bottom: 16px;
+        }
+        .placeholder {
+            display: inline-block;
+            background: #f2f2f2;
+            color: #888;
+            padding: 16px;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .youtube-link {
+            color: #fff !important;
+            background: #e62117;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 2px 8px rgba(230,33,23,0.08);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .youtube-link:hover {
+            background: #b31217;
+            box-shadow: 0 4px 16px rgba(230,33,23,0.16);
+        }
+        .blog-link {
+            color: #fff !important;
+            background: #21759b;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 2px 8px rgba(33,117,155,0.08);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .blog-link:hover {
+            background: #14526b;
+            box-shadow: 0 4px 16px rgba(33,117,155,0.16);
+        }
+        footer {
+            text-align: center;
+            color: #888;
+            font-size: 0.95rem;
+            margin-top: 48px;
+            padding: 24px 0 0 0;
+            border-top: 1px solid #eee;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 12px 4px;
+            }
+            section {
+                padding: 14px 6px;
+                margin-bottom: 24px;
+            }
+            section h2 {
+                font-size: 1.15rem;
+                padding-left: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hi, i am Harsh</h1>
+            <p>Learner on GitHub</p>
+        </header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="timeline.html">Timeline</a>
+        </nav>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a high school student passionate about mathematics, problem solving, and sharing knowledge. I enjoy exploring new math concepts, participating in competitions, and collaborating on STEM projects.</p>
+        </section>
+        <section id="youtube">
+            <h2>YouTube Channel</h2>
+            <p><a href="https://www.youtube.com/@numbersmatter2174" target="_blank" class="youtube-link">Visit my YouTube Channel</a></p>
+            <ul class="video-list">
+                <li><span class="placeholder">Video 1 (placeholder)</span></li>
+                <li><span class="placeholder">Video 2 (placeholder)</span></li>
+            </ul>
+        </section>
+        <section id="blogs">
+            <h2>WordPress Blogs</h2>
+            <p><a href="https://numbersmatter.blog/" target="_blank" class="blog-link">Visit my WordPress Blog</a></p>
+            <ul class="blog-list">
+                <li><span class="placeholder">Blog Article 1 (placeholder)</span></li>
+                <li><span class="placeholder">Blog Article 2 (placeholder)</span></li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects & Research</h2>
+            <ul class="project-list">
+                <li><span class="placeholder">Research Article (placeholder)</span></li>
+                <li><span class="placeholder">Robotics Project (placeholder)</span></li>
+                <li><span class="placeholder">Geography Project (placeholder)</span></li>
+            </ul>
+        </section>
+        <section id="images">
+            <h2>Images</h2>
+            <ul class="image-list">
+                <li><span class="placeholder">Image 1 (placeholder)</span></li>
+                <li><span class="placeholder">Image 2 (placeholder)</span></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <span class="placeholder">your.email@example.com</span></p>
+        </section>
+        <footer>
+            &copy; 2025 Math Student. Minimal, professional, and content-focused.
+        </footer>
+    </div>
+</body>
+</html>
